@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunia Olahraga</title>
+    <link rel="stylesheet" href="bultang.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-content">
+            <h2 class="sidebar-title">Menu</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link"><i class="ri-home-line"></i> Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <h1 class="page-title">Dunia Olahraga</h1>
+
+        <!-- Search and Filter Section -->
+        <div class="search-filter-container">
+            <input type="text" id="searchInput" placeholder="Search Bultang...">
+            <select id="filterSelect">
+                <option value="all">All Years</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+            </select>
+        </div>
+
+        <!-- Card Grid -->
+        <div id="cardGrid" class="card-grid">
+            <!-- Cards will be dynamically populated by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Sidebar Toggle -->
+    <button id="sidebarToggle" class="sidebar-toggle">
+        <i class="ri-menu-line"></i>
+    </button>
+
+    <!-- Modal for Card Details -->
+    <div id="cardModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalDetails"></div>
+        </div>
+    </div>
+
+    <script src="bultang.js"></script>
+</body>
+</html>
